@@ -1,0 +1,387 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LINKEND</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<!-- navbar start  -->
+    <div class="navbar">
+        <div class="navbar-left">
+            <a href="index.html" class="logo"><img src="vendor/image/logo.png" ></a>
+            <div class="search-box">
+                <img src="vendor/image/search.png">
+                <input type="text" placeholder="Search">
+            </div>
+        </div>
+        <div class="navbar-center">
+            <ul>
+                <li><a href="index.html" class="active-link"><img src="vendor/image/home.png"><span>Home</span></a></li>
+                <li><a href="#"><img src="vendor/image/network.png"><span>My network</span></a></li>
+                <li><a href="#"><img src="vendor/image/jobs.png"><span>Jobs</span></a></li>
+                <li><a href="#"><img src="vendor/image/message.png"><span>Messaging</span></a></li>
+                <li><a href="#"><img src="vendor/image/notification.png"><span>Notification</span></a></li>
+            </ul>
+        </div>
+        <div class="navbar-right">
+            <div class="online">
+                <img src="vendor/image/user-1.png" class="nav-profile-img" onclick="toggleMenu()">
+            </div>
+        </div>
+    <!-- profile-drop-down-menu  -->
+    <div class="profile-menu-wrap" id="profileMenu">
+        <div class="profile-menu">
+            <div class="user-info">
+                <img src="vendor/image/user-1.png">
+                <div>
+                    <h3>Rayhan walton</h3>
+                    <a href="profile.html">See your profile</a>
+                </div>
+            </div>
+            <hr>
+            <a href="#" class="profile-menu-link">
+                <img src="vendor/image/setting.png">
+                <p>Setting & Privacy</p>
+                <span>></span>
+            </a>
+            <a href="#" class="profile-menu-link">
+                <img src="vendor/image/help.png">
+                <p>Help & Support</p>
+                <span>></span>
+            </a>
+            <a href="#" class="profile-menu-link">
+                <img src="vendor/image/feedback.png">
+                <p>Give Feedback</p>
+                <span>></span>
+            </a>
+            <a href="#" class="profile-menu-link">
+                <img src="vendor/image/display.png">
+                <p>Display & Accesiblity</p>
+                <span>></span>
+            </a>
+            <a href="#" class="profile-menu-link">
+                <img src="vendor/image/logout.png">
+                <p>Logout</p>
+                <span>></span>
+            </a>
+        </div>
+    </div>
+
+    </div>
+<!-- navbar end   -->
+<div class="container">
+<!-- left sidebar  -->
+    <div class="left-sidebar">
+        <div class="sidebar-profile-box">
+            <img src="vendor/image/cover-pic.png" width="100%">
+            <div class="sidebar-profile-info">
+                <img src="vendor/image/user-1.png" >
+                <h1>Jahid hasan</h1>
+                <h3>Web devloper of complex academy</h3>
+                <ul>
+                    <li>Your profile views <span>810</span></li>
+                    <li>Your post views <span>1115</span></li>
+                    <li>Your connections <span>850</span></li>
+                </ul>
+            </div>
+            <div class="sidebar-profile-link">
+                <a href="#"><img src="vendor/image/items.png">My items</a>
+                <a href="#"><img src="vendor/image/premium.png">Tey premium</a>
+            </div>
+        </div>
+        <div class="sidebar-activity" id="sidebarActivity">
+            <h3>RECENT</h3>
+            <a href="#"><img src="vendor/image/recent.png">Web Devlopment</a>
+            <a href="#"><img src="vendor/image/recent.png">User Interface</a>
+            <a href="#"><img src="vendor/image/recent.png">Online Learning</a>
+            <a href="#"><img src="vendor/image/recent.png">Learn Online</a>
+            <a href="#"><img src="vendor/image/recent.png">Code Batter</a>
+            <a href="#"><img src="vendor/image/recent.png">Good Learning</a>
+            <h3>GROUP</h3>
+            <a href="#"><img src="vendor/image/group.png">Web design and devlopment</a>
+            <a href="#"><img src="vendor/image/group.png">Html and CSS learning</a>
+            <a href="#"><img src="vendor/image/group.png">Python and Javascript</a>
+            <a href="#"><img src="vendor/image/group.png">Learn coading online</a>
+            <h3>HASTAG</h3>
+            <a href="#"><img src="vendor/image/hashtag.png">webdesign</a>
+            <a href="#"><img src="vendor/image/hashtag.png">interfacing</a>
+            <a href="#"><img src="vendor/image/hashtag.png">coading online</a>
+            <div class="discocver-more-link">
+                <a href="#">Discover more</a>
+            </div>
+        </div>
+        <p id="showMoreLink" onclick="toggleActivity()">Show more <b>+</b></p>
+    </div>
+<!-- main content  -->
+    <div class="main-content">
+        <div class="create-post">
+            <div class="create-post-input">
+                <img src="vendor/image/user-1.png">
+                <textarea rows="2" placeholder="Write a post"></textarea>
+            </div>
+            <div class="create-post-links">
+                <li><img src="vendor/image/photo.png">Photo</li>
+                <li><img src="vendor/image/video.png">Video</li>
+                <li><img src="vendor/image/event.png">Event</li>
+                <li>Post</li>
+            </div>
+        </div>
+        <div class="sort-by">
+            <hr>
+            <p>Sort by: <span>top <img src="vendor/image/down-arrow.png"></span></p>
+        </div>
+        <div class="post">
+            <div class="post-author">
+                <img src="vendor/image/user-3.png">
+                <div>
+                    <h1>Benjamin leo</h1>
+                    <small>CEO and Founder at Europian IT</small>
+                    <small>2 hours ago</small>
+                </div>
+            </div>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nulla non quo suscipit minima voluptatibus ullam laborum sequi similique repudiandae eos consequatur excepturi mollitia veritatis commodi amet dolor quis sapiente aliquid vitae fugit, corporis praesentium dolores?</p>
+            <img src="vendor/image/post-image-1.png" width="100%">
+            <div class="post-status">
+                <div>
+                    <img src="vendor/image/thumbsup.png">
+                    <img src="vendor/image/love.png">
+                    <img src="vendor/image/clap.png">
+                    <span class="linked-users">Avinab misra and 852 others</span>
+                </div>
+                <div>
+                    <span>542 comments &middot; 100 shares</span>
+                </div>
+            </div>
+            <div class="post-activity">
+                <div>
+                    <img src="vendor/image/user-1.png" class="post-activity-user-icon">
+                    <img src="vendor/image/down-arrow.png" class="post-activity-arrow-icon">
+                </div>
+                <div class="post-activity-links">
+                    <img src="vendor/image/like.png">
+                    <span>Like</span>
+                </div>
+                <div class="post-activity-links">
+                    <img src="vendor/image/comment.png">
+                    <span>Comments</span>
+                </div>
+                <div class="post-activity-links">
+                    <img src="vendor/image/share.png">
+                    <span>Share</span>
+                </div>
+                <div class="post-activity-links">
+                    <img src="vendor/image/send.png">
+                    <span>Send</span>
+                </div>
+            </div>
+        </div>
+        <div class="post">
+            <div class="post-author">
+                <img src="vendor/image/user-4.png">
+                <div>
+                    <h1>Sam bridon</h1>
+                    <small>CEO and Founder at Europian IT</small>
+                    <small>2 hours ago</small>
+                </div>
+            </div>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nulla non quo suscipit minima voluptatibus ullam laborum sequi similique repudiandae eos consequatur excepturi mollitia veritatis commodi amet dolor quis sapiente aliquid vitae fugit, corporis praesentium dolores?</p>
+            <img src="vendor/image/post-image-2.png" width="100%">
+            <div class="post-status">
+                <div>
+                    <img src="vendor/image/thumbsup.png">
+                    <img src="vendor/image/love.png">
+                    <img src="vendor/image/clap.png">
+                    <span class="linked-users">Avinab misra and 852 others</span>
+                </div>
+                <div>
+                    <span>542 comments &middot; 100 shares</span>
+                </div>
+            </div>
+            <div class="post-activity">
+                <div>
+                    <img src="vendor/image/user-1.png" class="post-activity-user-icon">
+                    <img src="vendor/image/down-arrow.png" class="post-activity-arrow-icon">
+                </div>
+                <div class="post-activity-links">
+                    <img src="vendor/image/like.png">
+                    <span>Like</span>
+                </div>
+                <div class="post-activity-links">
+                    <img src="vendor/image/comment.png">
+                    <span>Comments</span>
+                </div>
+                <div class="post-activity-links">
+                    <img src="vendor/image/share.png">
+                    <span>Share</span>
+                </div>
+                <div class="post-activity-links">
+                    <img src="vendor/image/send.png">
+                    <span>Send</span>
+                </div>
+            </div>
+        </div>
+        <div class="post">
+            <div class="post-author">
+                <img src="vendor/image/user-5.png">
+                <div>
+                    <h1>Lana leo</h1>
+                    <small>CEO and Founder at Europian IT</small>
+                    <small>2 hours ago</small>
+                </div>
+            </div>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nulla non quo suscipit minima voluptatibus ullam laborum sequi similique repudiandae eos consequatur excepturi mollitia veritatis commodi amet dolor quis sapiente aliquid vitae fugit, corporis praesentium dolores?</p>
+            <img src="vendor/image/post-image-3.png" width="100%">
+            <div class="post-status">
+                <div>
+                    <img src="vendor/image/thumbsup.png">
+                    <img src="vendor/image/love.png">
+                    <img src="vendor/image/clap.png">
+                    <span class="linked-users">Avinab misra and 852 others</span>
+                </div>
+                <div>
+                    <span>542 comments &middot; 100 shares</span>
+                </div>
+            </div>
+            <div class="post-activity">
+                <div>
+                    <img src="vendor/image/user-1.png" class="post-activity-user-icon">
+                    <img src="vendor/image/down-arrow.png" class="post-activity-arrow-icon">
+                </div>
+                <div class="post-activity-links">
+                    <img src="vendor/image/like.png">
+                    <span>Like</span>
+                </div>
+                <div class="post-activity-links">
+                    <img src="vendor/image/comment.png">
+                    <span>Comments</span>
+                </div>
+                <div class="post-activity-links">
+                    <img src="vendor/image/share.png">
+                    <span>Share</span>
+                </div>
+                <div class="post-activity-links">
+                    <img src="vendor/image/send.png">
+                    <span>Send</span>
+                </div>
+            </div>
+        </div>
+        <div class="post">
+            <div class="post-author">
+                <img src="vendor/image/user-3.png">
+                <div>
+                    <h1>Ridi leo</h1>
+                    <small>CEO and Founder at Europian IT</small>
+                    <small>2 hours ago</small>
+                </div>
+            </div>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nulla non quo suscipit minima voluptatibus ullam laborum sequi similique repudiandae eos consequatur excepturi mollitia veritatis commodi amet dolor quis sapiente aliquid vitae fugit, corporis praesentium dolores?</p>
+            <img src="vendor/image/post-image-4.png" width="100%">
+            <div class="post-status">
+                <div>
+                    <img src="vendor/image/thumbsup.png">
+                    <img src="vendor/image/love.png">
+                    <img src="vendor/image/clap.png">
+                    <span class="linked-users">Avinab misra and 852 others</span>
+                </div>
+                <div>
+                    <span>542 comments &middot; 100 shares</span>
+                </div>
+            </div>
+            <div class="post-activity">
+                <div>
+                    <img src="vendor/image/user-1.png" class="post-activity-user-icon">
+                    <img src="vendor/image/down-arrow.png" class="post-activity-arrow-icon">
+                </div>
+                <div class="post-activity-links">
+                    <img src="vendor/image/like.png">
+                    <span>Like</span>
+                </div>
+                <div class="post-activity-links">
+                    <img src="vendor/image/comment.png">
+                    <span>Comments</span>
+                </div>
+                <div class="post-activity-links">
+                    <img src="vendor/image/share.png">
+                    <span>Share</span>
+                </div>
+                <div class="post-activity-links">
+                    <img src="vendor/image/send.png">
+                    <span>Send</span>
+                </div>
+            </div>
+        </div>
+    </div>
+<!-- right-sidebar  -->
+    <div class="right-sidebar">
+        <div class="sidebar-news">
+            <img src="vendor/image/more.png" class="info-icon">
+            <h1>Trending News</h1>
+            <a href="#">High demand for skilled manpower</a>
+            <span>1d ago &middot; 10,934 readers </span>
+
+            <a href="#">Carrers going herojantel too</a>
+            <span>19H ago &middot; 10,934 readers </span>
+
+            <a href="#">Less work for USA, more try UK</a>
+            <span>1d ago &middot; 11,934 readers </span>
+
+            <a href="#">More hairing = Hire confidance</a>
+            <span>16h ago &middot; 10,934 readers </span>
+
+            <a href="#">High demand for skilled manpower</a>
+            <span>1d ago &middot; 10,934 readers </span>
+
+            <a href="#" class="read-more-link">Read More</a>
+        </div>
+        <div class="sidebar-ad">
+            <small>Ad &middot; &middot; &middot;</small>
+            <p>Master the 5 pricipels of web design</p>
+            <div>
+                <img src="vendor/image/user-1.png">
+                <img src="vendor/image/mi-logo.png">
+            </div>
+            <b>Brand and demand in xaimoi</b>
+            <a href="#" class="ad-link">Learn More</a>
+        </div>
+        <div class="sidebar-useful-link">
+            <a href="#">About</a>
+            <a href="#">Accesiblity</a>
+            <a href="#">Help center</a>
+            <a href="#">Privacy policy</a>
+            <a href="#">Advertising</a>
+            <a href="#">Get the app</a>
+            <a href="#">More</a>
+            <div class="copyright-msg">
+                <img src="vendor/image/logo.png">
+                <p>Linkedup. &#169; 2022 All right reserved</p>
+            </div>
+        </div>
+    </div>
+</div>
+<script>
+   let profileMenu = document.getElementById("profileMenu");
+
+   function toggleMenu(){
+    profileMenu.classList.toggle("open-menu");
+
+   }
+</script>
+<script>
+    let sideActivity = document.getElementById("sidebarActivity");
+    let moreLink = document.getElementById("showMoreLink");
+
+    function toggleActivity(){
+        sideActivity.classList.toggle("open-activity");
+        if(sideActivity.classList.contains("open-activity")){
+            moreLink.innerHTML = "Show less <b>-<b/>";
+        }
+        else{
+            moreLink.innerHTML = "Show more <b>+<b/>";
+        }
+    }
+</script>
+</body>
+</html>
